@@ -1,0 +1,159 @@
+.app {
+    background-color:#092138;
+}
+
+.parent {
+    background-color:#092138;
+    display: grid;
+        grid: 'description degree main '
+        'description wind extras';
+
+}
+
+.mainInfo {
+grid-area: main;
+text-align: center;
+align-items: center;
+display: inline-flex;
+font-weight: 100;
+font-size: 25px;
+width: 350px;
+height: 350px;
+color: rgba(170, 198, 239, 1);
+border-style: solid;
+border-color:rgba(170, 198, 239, 1);
+}
+
+.temperatureCard {
+    grid-area: extras;
+    color: rgba(170, 198, 239, 1);
+    text-align: center;
+    border-style: solid;
+    font-weight: 200;
+    padding-top: 60px;
+    font-size: 25px;
+    width: 350px;
+    height: 290px;
+    border-color:rgba(170, 198, 239, 1);
+}
+
+.mainTemperatureCard {
+    grid-area: degree;
+    color: rgba(170, 198, 239, 1);
+    border-color:rgba(170, 198, 239, 1);
+    border-style: solid;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: monospace;
+    width: 250px;
+    height: 210px;
+    padding-top: 140px;
+}
+
+.windCard {
+    grid-area: wind;
+    color: rgba(170, 198, 239, 1);
+    text-align: center;
+    font-weight: lighter;
+    font-family: monospace;
+    border-style: solid;
+    font-size: 25px;
+    width: 250px;
+    height: 350px;
+    border-color:rgba(170, 198, 239, 1);
+}
+
+.descriptionCard {
+    grid-area: description;
+    color: rgba(170, 198, 239, 1);
+    text-align: center;
+    border-style: solid;
+    font-size: 25px;
+    align-items: center;
+    margin-left: 150px;
+    padding-left: 20px;
+    width: 250px;
+    height: 700px;
+    border-color:rgba(170, 198, 239, 1);
+    font-weight: 100;
+    position: relative;
+    padding-top: 55px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    padding: 25px;
+}
+
+ .descriptionCard p {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+.button {
+    border: 2px solid rgba(170, 198, 239, 1);
+    color: rgba(170, 198, 239, 1);
+    position: absolute;
+    right: 0;
+}
+
+.button:hover {
+    transition-duration: 0.4s;
+    background-color: rgba(170, 198, 239, 1);
+    color: #092138;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.searchButton{
+    border: 2px solid rgba(170, 198, 239, 1);
+    color: rgba(170, 198, 239, 1);
+}
+
+.searchButton:hover {
+    transition-duration: 0.4s;
+    background-color: rgba(170, 198, 239, 1);
+    color: #092138;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.footer{
+    color: lightblue;
+    text-align: center;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    color: rgba(170, 198, 239, 1);
+    font-size: 100px;
+    font-family: monospace;
+    text-shadow:2px 2px 5px #61849c;
+    margin-top: 0;
+}
+
+.error {
+    font-size: 40px;
+    color: rgba(170, 198, 239, 1);
+    text-align: center;
+    font-family: monospace;
+}
+
+.search {
+    text-align: center;
+}
+
+.loading{
+    font-size: 50px;
+    color: rgba(170, 198, 239, 1);
+    text-align: center;
+    font-family: monospace;
+}
+
+form {
+    font-size: medium;
+    font-family: monospace;
+    padding: 20px;
+}

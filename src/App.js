@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Router } from "@reach/router";
+import City from './components/City';
+import Search from './components/Search';
+import styles from './App.module.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+class App extends React.Component {
+  render() {
+    return (
+      <div className={styles.app}>
+        <h1>Weather</h1>
+        <Router>
+          <Search path='/'></Search>
+          <City path='/:city'></City>
+        </Router>
+      </div>
+    );
+  };
+};
 
 export default App;
